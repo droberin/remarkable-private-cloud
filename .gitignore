@@ -1,0 +1,6 @@
+.idea
+venv
+*.pyc
+certs/
+etc/known_devices.yaml
+*~

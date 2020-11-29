@@ -1,0 +1,7 @@
+bottle
+gunicorn
+PyYAML
+pyopenssl
+m2crypto
+coloredlogs
+pyocclient

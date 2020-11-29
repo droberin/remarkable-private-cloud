@@ -1,0 +1,17 @@
+# TODO: add a metadata storage server (MongoDB?) for accounts, fileset info and such.
+
+device_map:
+  device_token_literal: account_name1
+
+token_to_device_map:
+  token_test: device_token_literal
+
+accounts:
+  account_name1: # Usually an e-mail
+    owner: droberin # nominative name to use in some logs and stuff...
+    cloud:                                # Cloud configuration
+      provider: RemarkableownCloudHandler # storage backend connector
+      server: https://cloud.provider      # storage backend address
+      username: username                  # storage backend username
+      password: password                  # storage backend password
+    temp_token: token_test                # a string used as token to be removed soon in favour of a secure way (SOON!)
